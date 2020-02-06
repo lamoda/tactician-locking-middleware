@@ -1,0 +1,35 @@
+{
+    "name": "lamoda/tactician-locking-middleware",
+    "description": "Tactician command bus middleware for blocking commands execution inside of other running command",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^7.1",
+        "league/tactician": "^1.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0.12.9",
+        "phpstan/phpstan-phpunit": "^0.12.6",
+        "phpunit/phpunit": "^7.5.20"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lamoda\\TacticianLockingMiddleware\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lamoda\\TacticianLockingMiddlewareTest\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lamoda developers",
+            "homepage": "https://tech.lamoda.ru/"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "sort-packages": true
+    }
+}
